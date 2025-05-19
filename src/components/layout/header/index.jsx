@@ -21,25 +21,25 @@ const Header = () => {
       <nav className="flex-1 flex items-center justify-start gap-8 ml-8">
         <Link
           to="/resume"
-          className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
+          className="font-bold !text-black !hover:text-yellow-400 transition"
         >
           RESUME
         </Link>
         <Link
           to="/portfolio"
-          className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
+          className="font-bold !text-black hover:text-yellow-400 transition"
         >
           PORTFOLIO
         </Link>
         <Link
           to="/blog"
-          className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
+          className="font-bold !text-black hover:text-yellow-400 transition"
         >
           BLOG
         </Link>
         <Link
           to="/contact"
-          className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
+          className="font-bold !text-black hover:text-yellow-400 transition"
         >
           CONTACT
         </Link>

@@ -5,6 +5,7 @@ const Home = lazy(() => import("../pages/home"));
 const Resume = lazy(() => import("../pages/resume"));
 const Portfolio = lazy(() => import("../pages/portfolio"));
 const Blog = lazy(() => import("../pages/blog"));
+const Contact = lazy(() => import("../pages/contact"));
 const router = createBrowserRouter([
   {
     element: <LayoutMain />,
@@ -38,6 +39,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense>
             <Blog />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/contact",
+        element: (
+          <Suspense>
+            <Contact />
           </Suspense>
         ),
       },
