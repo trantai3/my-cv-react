@@ -5,22 +5,25 @@ import {
   FaInstagram,
   FaPaperPlane,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="flex items-center justify-between h-full">
       <div className="flex items-center h-full">
         <div className="bg-yellow-400 rounded-l-2xl flex items-center justify-center w-20 h-full">
-          <FaHome className="text-2xl text-black" />
+          <Link to="/">
+            <FaHome className="text-2xl text-black" />
+          </Link>
         </div>
       </div>
       <nav className="flex-1 flex items-center justify-start gap-8 ml-8">
-        <a
-          href="#"
+        <Link
+          to="/resume"
           className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
         >
           RESUME
-        </a>
+        </Link>
         <a
           href="#"
           className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
