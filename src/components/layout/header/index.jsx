@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import {
   FaHome,
   FaFacebookF,
@@ -5,61 +6,67 @@ import {
   FaInstagram,
   FaPaperPlane,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex items-center justify-between h-full">
       <div className="flex items-center h-full">
         <Link
-          className="h-full !bg-yellow-400 rounded-l-2xl flex items-center justify-center w-20 "
+          className="h-full !bg-yellow-400 rounded-l-2xl flex items-center justify-center w-20"
           to="/"
         >
           <FaHome className="text-2xl text-black" />
         </Link>
       </div>
       <nav className="flex-1 flex items-center justify-start gap-8 ml-8">
-        <Link
-          to="/resume"
-          className="font-bold !text-black !hover:text-yellow-400 transition"
+        <Button
+          type="text"
+          className="!text-black hover:!text-yellow-400 !font-bold !text-base !p-0 !h-auto !bg-transparent"
+          onClick={() => navigate("/resume")}
         >
           RESUME
-        </Link>
-        <Link
-          to="/portfolio"
-          className="font-bold !text-black hover:text-yellow-400 transition"
+        </Button>
+        <Button
+          type="text"
+          className="!text-black hover:!text-yellow-400 !font-bold !text-base !p-0 !h-auto !bg-transparent"
+          onClick={() => navigate("/portfolio")}
         >
           PORTFOLIO
-        </Link>
-        <Link
-          to="/blog"
-          className="font-bold !text-black hover:text-yellow-400 transition"
+        </Button>
+        <Button
+          type="text"
+          className="!text-black hover:!text-yellow-400 !font-bold !text-base !p-0 !h-auto !bg-transparent"
+          onClick={() => navigate("/blog")}
         >
           BLOG
-        </Link>
-        <Link
-          to="/contact"
-          className="font-bold !text-black hover:text-yellow-400 transition"
+        </Button>
+        <Button
+          type="text"
+          className="!text-black hover:!text-yellow-400 !font-bold !text-base !p-0 !h-auto !bg-transparent"
+          onClick={() => navigate("/contact")}
         >
           CONTACT
-        </Link>
+        </Button>
       </nav>
       <div className="flex items-center gap-4 ml-8">
         <a
           href="#"
-          className="!text-gray-400 hover:text-yellow-400 text-xl transition"
+          className="!text-black hover:text-yellow-400 text-xl transition"
         >
           <FaFacebookF />
         </a>
         <a
           href="#"
-          className="!text-gray-400 hover:text-yellow-400 text-xl transition"
+          className="!text-black hover:text-yellow-400 text-xl transition"
         >
           <FaTwitter />
         </a>
         <a
           href="#"
-          className="!text-gray-400 hover:text-yellow-400 text-xl transition"
+          className="!text-black hover:text-yellow-400 text-xl transition"
         >
           <FaInstagram />
         </a>
