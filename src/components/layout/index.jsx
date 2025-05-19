@@ -9,7 +9,7 @@ import SiderMain from "./sider";
 const LayoutMain = () => {
   return (
     <Layout className="!min-h-screen p-7">
-      <Sider width="26%" className="!bg-[#f5f5f5]">
+      <Sider width="27%" className="!bg-[#f5f5f5]">
         <SiderMain />
       </Sider>
       <Layout>

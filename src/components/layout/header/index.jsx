@@ -11,11 +11,12 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between h-full">
       <div className="flex items-center h-full">
-        <div className="bg-yellow-400 rounded-l-2xl flex items-center justify-center w-20 h-full">
-          <Link to="/">
-            <FaHome className="text-2xl text-black" />
-          </Link>
-        </div>
+        <Link
+          className="h-full !bg-yellow-400 rounded-l-2xl flex items-center justify-center w-20 "
+          to="/"
+        >
+          <FaHome className="text-2xl text-black" />
+        </Link>
       </div>
       <nav className="flex-1 flex items-center justify-start gap-8 ml-8">
         <Link
@@ -24,24 +25,24 @@ const Header = () => {
         >
           RESUME
         </Link>
-        <a
-          href="#"
+        <Link
+          to="/portfolio"
           className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
         >
           PORTFOLIO
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/blog"
           className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
         >
           BLOG
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/contact"
           className="font-bold tracking-wide !text-black hover:text-yellow-400 transition"
         >
           CONTACT
-        </a>
+        </Link>
       </nav>
       <div className="flex items-center gap-4 ml-8">
         <a

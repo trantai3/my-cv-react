@@ -85,7 +85,7 @@ const testimonials = [
 
 const Resume = () => (
   <div className="space-y-8">
-    <div className="bg-white rounded-2xl shadow p-6">
+    <div className="bg-white rounded-2xl shadow p-6 mt-[32px]">
       <h2 className="font-bold text-lg underline underline-offset-4 decoration-yellow-400 mb-4">
         Resume
       </h2>
