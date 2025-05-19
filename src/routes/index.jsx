@@ -1,10 +1,20 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+const LayoutMain = lazy(() => import("../components/layout"));
+const Home = lazy(() => import("../pages/home"));
 const router = createBrowserRouter([
   {
-    path: "",
-    element: <Suspense></Suspense>,
+    element: <LayoutMain />,
+    children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Home />
+          </Suspense>
+        ),
+      },
+    ],
   },
 ]);
 
