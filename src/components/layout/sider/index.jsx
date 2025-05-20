@@ -1,8 +1,8 @@
 import Profile from "../../../assets/images/profile.jpg";
 const Sider = () => (
-  <div className="bg-white rounded-3xl shadow-2xl p-4 w-80 flex flex-col items-center relative overflow-hidden">
-    <div className="flex justify-center w-full -mt-20 mb-4">
-      <img src={Profile} alt="Profile" />
+  <div className="bg-white rounded-3xl shadow-2xl p-4 flex flex-col items-center relative overflow-hidden">
+    <div>
+      <img className="rounded-2xl" src={Profile} alt="Profile" />
     </div>
     <h2 className="text-2xl font-extrabold mt-2 mb-1 text-center">
       HENRY ROONEY

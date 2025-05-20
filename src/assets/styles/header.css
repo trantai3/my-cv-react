@@ -1,0 +1,30 @@
+.navMax850 {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .navMin850 {
+    display: none;
+  }
+  .navMax850 {
+    display: flex;
+    font-size: 24px;
+  }
+  .ant-dropdown.css-dev-only-do-not-override-1m2bkf9.ant-dropdown-placement-bottom {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .ant-dropdown.css-dev-only-do-not-override-1m2bkf9.ant-dropdown-placement-bottom
+    a:hover {
+    color: #fdc700;
+  }
+  .ant-dropdown.css-dev-only-do-not-override-1m2bkf9.ant-dropdown-placement-bottom
+    a {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .hiremeCustome {
+    display: none;
+  }
+}
